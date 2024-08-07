@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/clothstore/static/css/main.05c9315f.css",
+    "main.js": "/clothstore/static/js/main.0072d6cb.js",
+    "static/js/453.9088f98e.chunk.js": "/clothstore/static/js/453.9088f98e.chunk.js",
+    "static/media/logo1.png": "/clothstore/static/media/logo1.fe5b77542c3189bb5680.png",
+    "index.html": "/clothstore/index.html",
+    "main.05c9315f.css.map": "/clothstore/static/css/main.05c9315f.css.map",
+    "main.0072d6cb.js.map": "/clothstore/static/js/main.0072d6cb.js.map",
+    "453.9088f98e.chunk.js.map": "/clothstore/static/js/453.9088f98e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05c9315f.css",
+    "static/js/main.0072d6cb.js"
+  ]
+}
