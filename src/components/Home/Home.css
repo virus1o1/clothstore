@@ -1,0 +1,18 @@
+.home-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f8f9fa;
+  }
+  
+  @media (max-width: 768px) {
+    .home-section {
+      padding: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-section {
+      padding: 20px;
+    }
+  }
+  

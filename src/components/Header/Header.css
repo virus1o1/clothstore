@@ -1,0 +1,140 @@
+/* Hide the mobile logo by default */
+.logo-mobile {
+  display: none;
+}
+
+.logo-desktop {
+  height: 40px;
+}
+
+.navbar-nav a {
+  font-size: 1rem !important;
+}
+
+.mouse-pointer {
+  cursor: pointer;
+}
+
+.custom-modal .modal-dialog {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 1rem); /* Ensure modal is vertically centered */
+}
+
+.custom-modal .modal-content {
+  padding: 2rem;
+}
+
+/* Styling for buttons */
+.custom-button {
+    border: none !important;
+    background: linear-gradient(to bottom, #ff9458, #ff5e29);
+    transition: ease-in 0.5s;
+  }
+  
+  .custom-button:hover {
+    background: linear-gradient(to bottom, #ff5e29, #ff9458);
+    box-shadow: 0px 4px 6px rgba(255, 116, 24, 0.15);
+  }
+
+/* Sign In Button styling */
+.nav-link.active {
+  background-color: #f8f9fa; /* Adjust the background color as needed */
+}
+
+.navbar-nav .btn {
+  margin-left: 1rem;
+}
+
+/* Show mobile logo only on small screens */
+@media (max-width: 768px) {
+  .logo-desktop {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+    height: 40px;
+  }
+
+  .navbar-toggler {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .icon-toggle {
+    width: 26px;
+    height: 26px;
+    transition: opacity 0.3s ease;
+  }
+
+  .icon-open {
+    opacity: 1;
+  }
+
+  .icon-close {
+    opacity: 0;
+  }
+
+  #navbar-toggle:checked ~ .navbar-toggler .icon-open {
+    opacity: 0;
+  }
+
+  #navbar-toggle:checked ~ .navbar-toggler .icon-close {
+    opacity: 1;
+  }
+
+  #navbar-toggle:checked ~ .navbar-menu {
+    display: flex !important;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-menu .nav-link {
+    padding: 10px 15px;
+  }
+
+  .navbar .d-lg-none {
+    display: flex;
+  }
+
+  .navbar .d-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar .navbar-toggler {
+    margin-left: 0px;
+    border: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar .navbar-toggler {
+    margin-left: 0px;
+    border: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar .d-lg-flex {
+    display: flex;
+  }
+}
+
+/* Active link styling */
+.nav-link.active {
+  background-color: #f8f9fa; /* Adjust the background color as needed */
+}

@@ -1,0 +1,15 @@
+.profile-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .profile-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .profile-container p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
