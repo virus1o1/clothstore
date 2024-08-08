@@ -32,7 +32,7 @@ function Header() {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setNavExpanded(false); // Close the menu if click is outside
+        setNavExpanded(false);
       }
     };
 
@@ -45,15 +45,15 @@ function Header() {
 
   const handleLinkClick = () => {
     if (navExpanded) {
-      setNavExpanded(false); // Close the menu when a link is clicked
+      setNavExpanded(false);
     }
   };
 
   const handleProfileClick = () => {
     if (!isSignedIn) {
-      setShowSignIn(true); // Show sign-in modal if not signed in
+      setShowSignIn(true);
     } else {
-      navigate('/profile'); // Navigate to profile page if signed in
+      navigate("/profile");
     }
   };
 
@@ -61,12 +61,12 @@ function Header() {
     event.preventDefault();
     const email = event.target.email.value;
     const password = event.target.password.value;
-    
+
     // Dummy sign-in logic
     if (email === "test@gmail.com" && password === "123") {
       setIsSignedIn(true);
       setShowSignIn(false);
-      navigate('/profile'); // Redirect to profile page after sign-in
+      navigate("/");
     } else {
       alert("Invalid email or password");
     }
@@ -76,21 +76,27 @@ function Header() {
     <>
       <Navbar
         expand="lg"
-        bg="light"
-        className="px-4"
+        className="px-4 custom-bg"
         expanded={navExpanded}
         onToggle={() => setNavExpanded(!navExpanded)}
         ref={menuRef}
       >
         <Container fluid>
           <Link to="/" className="navbar-brand">
-            <img src={isMobile ? logo2 : logo1} alt="Logo" style={{ height: "40px" }} />
+            <img
+              src={isMobile ? logo2 : logo1}
+              alt="Logo"
+              style={{ height: "40px" }}
+            />
           </Link>
           <div className="d-flex align-items-center d-lg-none ms-auto">
-            <FiUser className="mx-2" onClick={handleProfileClick} />
-            <FiShoppingBag className="mx-2" onClick={() => setShowCart(true)} />
+            <FiUser className="custom-icon rounded-1 fs-5" onClick={handleProfileClick} />
+            <FiShoppingBag
+              className="custom-icon rounded-1 fs-5"
+              onClick={() => setShowCart(true)}
+            />
             <Navbar.Toggle aria-controls="navbarNav">
-              <IoReorderThreeOutline />
+              <IoReorderThreeOutline className="fs-2" />
             </Navbar.Toggle>
           </div>
           <Navbar.Collapse id="navbarNav">
@@ -98,7 +104,9 @@ function Header() {
               <Nav.Link
                 as={Link}
                 to="/"
-                className={`text-uppercase mx-2 ${location.pathname === '/' ? 'active' : ''}`}
+                className={`text-uppercase mx-2 ${
+                  location.pathname === "/" ? "active" : ""
+                }`}
                 onClick={handleLinkClick}
               >
                 Home
@@ -106,7 +114,9 @@ function Header() {
               <Nav.Link
                 as={Link}
                 to="/about"
-                className={`text-uppercase mx-2 ${location.pathname === '/about' ? 'active' : ''}`}
+                className={`text-uppercase mx-2 ${
+                  location.pathname === "/about" ? "active" : ""
+                }`}
                 onClick={handleLinkClick}
               >
                 About
@@ -114,18 +124,27 @@ function Header() {
               <Nav.Link
                 as={Link}
                 to="/contactus"
-                className={`text-uppercase mx-2 ${location.pathname === '/contactus' ? 'active' : ''}`}
+                className={`text-uppercase mx-2 ${
+                  location.pathname === "/contactus" ? "active" : ""
+                }`}
                 onClick={handleLinkClick}
               >
                 Contact Us
               </Nav.Link>
-              <Button className="mx-2 custom-button" onClick={() => setShowSignIn(true)}>
-                Sign In
+              <Button
+                className="mx-2 custom-signin fs-6 fw-bold"
+                onClick={() => setShowSignIn(true)}
+              >
+                SIGN IN
               </Button>
             </Nav>
             <div className="d-none d-lg-flex align-items-center ms-3">
-              <FiUser className="mx-2 mouse-pointer" onClick={handleProfileClick} />
-              <FiShoppingBag className="mx-2 mouse-pointer" onClick={() => setShowCart(true)} />
+              <span className=" mouse-pointer custom-icon">
+                <FiUser className="mx-2" onClick={handleProfileClick} />
+              </span>
+              <span className=" mouse-pointer custom-icon">
+                <FiShoppingBag className="mx-2" onClick={() => setShowCart(true)} />
+              </span>
             </div>
           </Navbar.Collapse>
         </Container>
@@ -133,7 +152,12 @@ function Header() {
 
       <CartModal show={showCart} handleClose={() => setShowCart(false)} />
 
-      <Modal show={showSignIn} onHide={() => setShowSignIn(false)} centered className="custom-modal">
+      <Modal
+        show={showSignIn}
+        onHide={() => setShowSignIn(false)}
+        centered
+        className="custom-modal"
+      >
         <Modal.Header closeButton>
           <Modal.Title>Sign In</Modal.Title>
         </Modal.Header>
@@ -141,13 +165,29 @@ function Header() {
           <Form onSubmit={handleSignIn}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" name="email" className="rounded-0" required />
+              <Form.Control
+                type="email"
+                placeholder="Enter email"
+                name="email"
+                className="rounded-0"
+                required
+              />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" name="password" className="rounded-0" required />
+              <Form.Control
+                type="password"
+                placeholder="Password"
+                name="password"
+                className="rounded-0"
+                required
+              />
             </Form.Group>
-            <Button variant="primary" type="submit" className="w-100 mt-3 custom-button">
+            <Button
+              variant="primary"
+              type="submit"
+              className="w-100 mt-3 custom-button"
+            >
               Sign In
             </Button>
           </Form>

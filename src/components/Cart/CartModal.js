@@ -14,7 +14,7 @@ const CartModal = ({ show, handleClose }) => {
         {/* Add cart items here */}
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="secondary" onClick={handleClose}>
+        <Button variant="secondary rounded-3" onClick={handleClose}>
           Close
         </Button>
         <Button variant="primary" className='custom-button'>
