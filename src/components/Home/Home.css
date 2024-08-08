@@ -19,6 +19,21 @@
     font-size: 1rem;
     color: #555;
   }
+
+  .icon-color {
+    color: #40534c; /* Icon color */
+  }
+  
+  .title {
+    color: #000; /* Title color */
+    font-weight: bold; /* Bold title */
+    font-size: 0.875rem; /* Smaller title font size */
+  }
+  
+  .text-color {
+    color: #506953; /* Text color */
+  }
+  
   @media (max-width: 768px) {
     .home-section {
       padding: 30px;

@@ -82,6 +82,11 @@
   margin-left: 1rem;
 }
 
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
 /* Show mobile logo only on small screens */
 @media (max-width: 768px) {
   .logo-desktop {
