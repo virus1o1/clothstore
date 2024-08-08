@@ -4,10 +4,21 @@
     background-color: #f8f9fa;
   }
 
-  .custom-slog{
-    color: #999;
+  .custom-container {
+    padding: 20px;
+    text-align: center;
   }
   
+  .custom-container h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .custom-container p {
+    font-size: 1rem;
+    color: #555;
+  }
   @media (max-width: 768px) {
     .home-section {
       padding: 30px;

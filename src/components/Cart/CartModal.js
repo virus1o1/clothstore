@@ -1,7 +1,6 @@
 import React from 'react';
 import "./CartModal.css";
 import { Modal, Button } from 'react-bootstrap';
-import { FiShoppingBag } from 'react-icons/fi';
 
 const CartModal = ({ show, handleClose }) => {
   return (

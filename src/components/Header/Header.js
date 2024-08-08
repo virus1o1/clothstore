@@ -89,7 +89,7 @@ function Header() {
               style={{ height: "40px" }}
             />
           </Link>
-          <div className="d-flex align-items-center d-lg-none ms-auto">
+          <div className="d-flex align-items-center justify-content-between d-lg-none ms-auto">
             <FiUser className="custom-icon rounded-1 fs-5" onClick={handleProfileClick} />
             <FiShoppingBag
               className="custom-icon rounded-1 fs-5"
@@ -139,7 +139,7 @@ function Header() {
               </Button>
             </Nav>
             <div className="d-none d-lg-flex align-items-center ms-3">
-              <span className=" mouse-pointer custom-icon">
+              <span className=" mouse-pointer custom-icon me-3">
                 <FiUser className="mx-2" onClick={handleProfileClick} />
               </span>
               <span className=" mouse-pointer custom-icon">
