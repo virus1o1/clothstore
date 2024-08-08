@@ -1,0 +1,21 @@
+.card-img-top {
+    width: 100%;
+    max-height: 295px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+
+  .card-text {
+    color: #506953;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 767.98px) {
+    .card-body {
+      padding: 0.5rem;
+    }
+  }
+  

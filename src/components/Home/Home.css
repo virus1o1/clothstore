@@ -3,6 +3,10 @@
     text-align: center;
     background-color: #f8f9fa;
   }
+
+  .custom-slog{
+    color: #999;
+  }
   
   @media (max-width: 768px) {
     .home-section {
