@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/clothstore/static/css/main.05c9315f.css",
-    "main.js": "/clothstore/static/js/main.0072d6cb.js",
+    "main.css": "/clothstore/static/css/main.821537e1.css",
+    "main.js": "/clothstore/static/js/main.a11da43a.js",
     "static/js/453.9088f98e.chunk.js": "/clothstore/static/js/453.9088f98e.chunk.js",
+    "static/media/show4.jfif": "/clothstore/static/media/show4.7597c99ddab02f1eed74.jfif",
+    "static/media/show2.jfif": "/clothstore/static/media/show2.c2196cd58606eeddc073.jfif",
+    "static/media/show1.jfif": "/clothstore/static/media/show1.5e7fddca0987adf87f15.jfif",
+    "static/media/cover1.jfif": "/clothstore/static/media/cover1.4249506e875c20a42ee2.jfif",
+    "static/media/show3.jfif": "/clothstore/static/media/show3.b5a85e431a3acccae44c.jfif",
     "static/media/logo1.png": "/clothstore/static/media/logo1.fe5b77542c3189bb5680.png",
     "index.html": "/clothstore/index.html",
-    "main.05c9315f.css.map": "/clothstore/static/css/main.05c9315f.css.map",
-    "main.0072d6cb.js.map": "/clothstore/static/js/main.0072d6cb.js.map",
+    "main.821537e1.css.map": "/clothstore/static/css/main.821537e1.css.map",
+    "main.a11da43a.js.map": "/clothstore/static/js/main.a11da43a.js.map",
     "453.9088f98e.chunk.js.map": "/clothstore/static/js/453.9088f98e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05c9315f.css",
-    "static/js/main.0072d6cb.js"
+    "static/css/main.821537e1.css",
+    "static/js/main.a11da43a.js"
   ]
 }
